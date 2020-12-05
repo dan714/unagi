@@ -10,5 +10,11 @@
 [ -f /Users/dan/Github/saratoga/node_modules/tabtab/.completions/slss.bash ] && . /Users/dan/Github/saratoga/node_modules/tabtab/.completions/slss.bash
 
 function git-stale() {
-  git branch -vv | grep ': gone]' |  grep -v "\*" | awk '{ print $1; }'
+  level=$1
+  if [ "$level" = "delete" ]
+  then
+    git branch -vv | grep ': gone]' |  grep -v "\*" | awk '{ print $1; }' | xargs git branch -d
+  else
+    git branch -vv | grep ': gone]' |  grep -v "\*" | awk '{ print $1; }'
+  fi
 }
