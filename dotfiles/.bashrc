@@ -24,7 +24,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools 
-alias ls='ls -GAp1'
+alias ls='ls -Ap1'
 
 export MYAPP_RELEASE_STORE_FILE=marble-release-key.keystore
 export MYAPP_RELEASE_KEY_ALIAS=marble-release-key
