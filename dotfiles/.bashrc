@@ -30,3 +30,5 @@ export MYAPP_RELEASE_STORE_FILE=marble-release-key.keystore
 export MYAPP_RELEASE_KEY_ALIAS=marble-release-key
 export MYAPP_RELEASE_STORE_PASSWORD=dogcarrot
 export MYAPP_RELEASE_KEY_PASSWORD=dogcarrot
+
+eval $(/opt/homebrew/bin/brew shellenv)

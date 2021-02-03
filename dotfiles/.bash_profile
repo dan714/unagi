@@ -3,7 +3,7 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 export PATH=/usr/local/lib/node_modules/pm2/node_modules/.bin/ts-node:$PATH
 
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
